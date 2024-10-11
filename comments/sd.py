@@ -1,5 +1,9 @@
-def greet(num_1, num_2):
-    return(num_1 - num_2)
+def is_between(num):
 
-print(int(greet(1, 1)))
-print(int(greet(743, 834)))
+     if num >= 10 and num <= 20:
+
+          return True
+
+     return False
+
+print(is_between(20))
