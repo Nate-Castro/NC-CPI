@@ -5,7 +5,7 @@ answer1 = 12
 if quest1 == answer1:
         score += 1
         print("Correct, 7 + 5 is", quest1)
-    
+    #sadas
 
 quest2 = input("What is the name of the closest planet to the sun?: ")
 answer2 = "Mercury"
