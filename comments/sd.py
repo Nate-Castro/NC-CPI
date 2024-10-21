@@ -1,5 +1,15 @@
-def add_to_list(item, my_list=[]):
+def sum_even_numbers(numbers):
 
-     my_list.append(item)
+     sum = 0
 
-     return my_list
+     for num in numbers:
+          
+          if num % 2 == 0:
+
+               sum += num
+
+          else:
+
+               return 0
+          
+     return sum
