@@ -5,11 +5,11 @@ user = input("What is your name: ")
 
 
 
-if user in auth_user:
-    print("You are allowed to come in")
-
 if user == "Nate":
     print("Hello Admin")
+
+elif user in auth_user:
+    print("You are allowed to come in")
 
 else:
     print("No entry")
