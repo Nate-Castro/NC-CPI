@@ -6,3 +6,5 @@ if play == "no":
 
 if play == "yes":
     print("Okay")
+    while True:
+        print("You go first")
