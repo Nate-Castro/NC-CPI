@@ -3,7 +3,7 @@
 import random
 #score =+ 1
 
-com1 = ["rock", "paper", "scissors"]
+game = ["rock", "paper", "scissors"]
 
 
 
@@ -18,23 +18,33 @@ if play == "yes":
     
     print("You go first")
 
-user1 = input("Rock, paper, or scissors?: ")
-print(random.choice(com1))
+while play == "yes":
+     
 
-if user1 == "scissors" and com1 == "rock":
-    print("Computer wins!")
-
-elif user1 == "rock" and com1 == "scissors":
-    print("User wins!")
-
-elif user1 == "rock" and com1 == "paper":
+    user1 = input("Rock, paper, or scissors?: ")
+    if user1 not in ["rock", "scissor", "paper"]:
+        print("Try again!!!")
+    
+    com1 = random.choice(game)
+    print("The computer chooses", com1)
+    
+    if user1 == "scissors" and com1 == "rock":
         print("Computer wins!")
 
-elif user1 == "paper" and com1 == "rock":
-    print("User wins!")
+    elif user1 == "rock" and com1 == "scissors":
+        print("User wins!")
 
-elif user1 == "paper" and com1 == "scissors":
-    print("Computer wins!")
+    elif user1 == "rock" and com1 == "paper":
+        print("Computer wins!")
 
-elif user1 == "scissors" and com1 == "paper":
-    print("User wins")
+    elif user1 == "paper" and com1 == "rock":
+        print("User wins!")
+
+    elif user1 == "paper" and com1 == "scissors":
+        print("Computer wins!")
+
+    elif user1 == "scissors" and com1 == "paper":
+        print("User wins")
+
+    else:
+        print("It's a tie! go again.")
