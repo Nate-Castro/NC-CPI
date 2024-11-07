@@ -1,7 +1,7 @@
 #Nathaniel Castro ProfTest: Authorized
 
 auth_user = ["Nate", "Devin", "Gavin", "Royal", "William", "Matthew", "Locklin", "Jude"]
-user = input("What is your name: ")
+user = input("What is your name?: ")
 
 
 
