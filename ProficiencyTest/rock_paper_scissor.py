@@ -1,7 +1,7 @@
 #Nathaniel Castro ProfTest: Rock, Paper, Scissors
 
 import random
-
+score = 0
 
 game = ["rock", "paper", "scissors"]
 
@@ -19,7 +19,7 @@ if play == "yes":
     print("You go first")
 
 while play == "yes":
-    score = 0 
+    
     user1 = input("Rock, paper, or scissors?: ")
     
     while user1 not in ["rock", "paper", "scissors"]:
@@ -34,27 +34,27 @@ while play == "yes":
     
     if user1 == "scissors" and com1 == "rock":
         print("Computer wins!")
-        score =- 1
+        score -= 1
 
     elif user1 == "rock" and com1 == "scissors":
         print("User wins!")
-        score =+ 1
+        score += 1
 
     elif user1 == "rock" and com1 == "paper":
         print("Computer wins!")
-        score =- 1
+        score -= 1
 
     elif user1 == "paper" and com1 == "rock":
         print("User wins!")
-        score =+ 1
+        score += 1
 
     elif user1 == "paper" and com1 == "scissors":
         print("Computer wins!")
-        score =- 1
+        score -= 1
 
     elif user1 == "scissors" and com1 == "paper":
         print("User wins")
-        score =+ 1
+        score += 1
 
     else:
         print("It's a tie! Go again.")
