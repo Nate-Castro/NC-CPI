@@ -4,18 +4,22 @@ string1 = input("Give your Shift Cypher: ")
 
 
 
+f = ""
 
-
-
-def decode():
+def decode(f):
     for x in string1:
-        #print(ord(x),end="=")
         print(ord(x))
-
-        
-        print(chr(ord(x) + 1))
-
-
     
+    for x in string1:
+        print(chr(ord(x) + 1))
+  
+  
+  
+   #     f = ""
 
-decode()
+  #      f += x
+
+
+
+decode(string1)
+
