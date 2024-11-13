@@ -2,3 +2,5 @@
 
 word = input("Give a word: ")
 
+def convert():
+    

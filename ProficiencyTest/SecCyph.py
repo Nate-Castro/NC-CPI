@@ -1,25 +1,19 @@
 #Nathaniel Castro ProfTest: Secret Cypher
 
-string1 = input("Give your Shift Cypher: ")
-
-
-
-f = ""
-
-def decode(f):
+#string1 = input("Give your Shift Cypher: ")
+def decode():
+    string1 = input("Give your Shift Cypher: ")
+    f = ""
     for x in string1:
-        print(ord(x))
+        x = (ord(x)) + 11
     
-    for x in string1:
-        print(chr(ord(x) + 1))
+    #for x in string1:
+        f = f + (chr(x))
   
-  
-  
-   #     f = ""
-
-  #      f += x
+    print("The code you put was", string1)
+    print("The new code is", f)
 
 
 
-decode(string1)
+decode()
 
