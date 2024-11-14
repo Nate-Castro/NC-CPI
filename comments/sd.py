@@ -1,5 +1,5 @@
-print(ord("a"))
+def add_to_list(item, my_list=[]):
 
-a = chr(ord("a") + 2)
-print(a)
+     my_list.append(item)
 
+     return my_list

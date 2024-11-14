@@ -5,7 +5,7 @@ def decode():
     string1 = input("Give your Shift Cypher: ")
     f = ""
     for x in string1:
-        x = (ord(x)) + 11
+        x = (ord(x)) + 1
     
     #for x in string1:
         f = f + (chr(x))
