@@ -6,3 +6,5 @@ answer1 = int(input("What is 25 X 2?: "))
 
 if answer1 == 50:
     print("That is correct!")
+    if answer1 != 50:
+        print("Wrong answer")
