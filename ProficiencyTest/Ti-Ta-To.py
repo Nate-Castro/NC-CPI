@@ -3,36 +3,68 @@ import random
 print("Welcome to you tic-tac-toe game! You are X and the computer is O, Here is the board.")
 
 
+#column1 = ["    |      |", "    |      |"]# "    |      |"]
+#row1 = ["_________________"] 
 
-column1 = ["    |      |", "    |      |", "    |      |"]
-row1 = ["_________________"] 
+grid = [[1,2,3],
+[4,5,6],
+[7,8,9]]
 b = 2
 q = 2
 f = 2
-while b < 3:
-    b += 1
-    for x in column1:
-        print(x)
-for a in row1:
-    print(a)
-while q < 3:
-    q += 1
-    for x in column1:
-        print(x)
-for a in row1:
-    print(a)
-while f < 3:
-    f += 1
-    for x in column1:
-        print(x)
-user = input("""Where do you want to place?
-             A. Top right
-             B. Top middle
-             C. Top left
-             D. Middle left
-             E. Middle
-             F. Middle righ5t
-             G. Bottom left
-             H. Bottom middle
-             I. Bottom right
-             : """)
+com1 = [1,2,3,4,5,6,7,8,9]
+com_choice = random.choice(com1)
+
+
+
+
+
+for row in grid:
+    print(row)
+
+user = int(input("Where do you want to put your X? (Use number placement in table): "))
+
+for rownum, row in enumerate(grid):
+    for placenum, place in enumerate(row):
+        if user == place:
+            grid[rownum][placenum] = "x"
+print("Here is the board")
+for row in grid:
+    print(row)
+
+#print("This is the board currently")
+#win()
+
+for rownum, row in enumerate(grid):
+    for placenum, place in enumerate(row):
+        if com_choice == place:
+            grid[rownum][placenum] = "o"
+print("Here is the board after the Computer places")
+for row in grid:
+    print(row)
+
+#print("This is the board after the computer places. ")
+
+user = int(input("Where do you want to put your X? (Use number placement in table): "))
+
+for rownum, row in enumerate(grid):
+    for placenum, place in enumerate(row):
+        if user == place:
+            grid[rownum][placenum] = "X"
+
+for row in grid:
+    print(row)
+
+#win()
+
+for rownum, row in enumerate(grid):
+    for placenum, place in enumerate(row):
+        if com_choice == place:
+            grid[rownum][placenum] = "O"
+
+for row in grid:
+    print(row)
+
+
+
+
