@@ -36,6 +36,7 @@ while play == "yes":
         print("Computer wins!")
         score -= 1
 
+
     elif user1 == "rock" and com1 == "scissors":
         print("User wins!")
         score += 1
