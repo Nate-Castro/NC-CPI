@@ -2,11 +2,11 @@
 score = 0
 print("Welcome to The Quiz!\n", "Lets see how much you know about Math")
 
-answer1 = input("""What is the answer to 25 X 2?(Please use the letter for answer)
-                A. 27
-                B. 50
-                C. 94
-                D. 81
+answer1 = input("""How many parts of JoJos are animated?(Please use the letter for answer)
+                A. 9
+                B. 6
+                C. 7
+                D. 2
                 :""")
 if answer1.lower() == "b":
     print("Correct")
